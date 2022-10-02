@@ -17,7 +17,7 @@ class _CategorySelectorState extends State<CategorySelector> {
   Widget build(BuildContext context) {
     return Container(
       height: 50.0,
-      color: Color.fromARGB(255, 6, 81, 244),
+      color: Color.fromARGB(255, 180, 193, 223),
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: categories.length,
@@ -37,8 +37,10 @@ class _CategorySelectorState extends State<CategorySelector> {
                 categories[index],
                 style: GoogleFonts.cabin(
                   fontSize: 22,
-                  fontWeight: FontWeight.w500,
-                  color: index == selectedIndex ? Colors.white : Colors.white60,
+                  fontWeight: FontWeight.w600,
+                  color: index == selectedIndex
+                      ? Color.fromARGB(255, 30, 70, 231)
+                      : Colors.white60,
                 ),
               ),
             ),

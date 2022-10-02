@@ -82,25 +82,11 @@ class _Homescreenstate extends State<Homescreen> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8.0),
                             image: DecorationImage(
-                              image: AssetImage("assets/P14.jpeg"),
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-
-                        //2nd Image of Slider
-                        Container(
-                          margin: EdgeInsets.all(6.0),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8.0),
-                            image: DecorationImage(
                               image: AssetImage("assets/P15.jpeg"),
                               fit: BoxFit.cover,
                             ),
                           ),
                         ),
-
-                        //3rd Image of Slider
                         Container(
                           margin: EdgeInsets.all(6.0),
                           decoration: BoxDecoration(
@@ -111,8 +97,6 @@ class _Homescreenstate extends State<Homescreen> {
                             ),
                           ),
                         ),
-
-                        //4th Image of Slider
                         Container(
                           margin: EdgeInsets.all(6.0),
                           decoration: BoxDecoration(
@@ -123,8 +107,6 @@ class _Homescreenstate extends State<Homescreen> {
                             ),
                           ),
                         ),
-
-                        //5th Image of Slider
                         Container(
                           margin: EdgeInsets.all(6.0),
                           decoration: BoxDecoration(
@@ -236,10 +218,15 @@ class _Homescreenstate extends State<Homescreen> {
                               SizedBox(
                                 height: 20,
                               ),
-                              Text(
-                                "Rentals",
-                                style: cardtextStyle,
-                              )
+                              InkWell(
+                                child: Text(
+                                  "Rentals",
+                                  style: cardtextStyle,
+                                ),
+                                onTap: () {
+                                  Navigator.pushNamed(context, "market");
+                                },
+                              ),
                             ],
                           ),
                         ),

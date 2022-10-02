@@ -3,6 +3,7 @@ import 'login.dart';
 import 'home.dart';
 import 'comm.dart';
 import 'comm1.dart';
+import 'market.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -13,6 +14,7 @@ void main() {
       'Home': (context) => Homescreen(),
       'Comm': (context) => MyComm(),
       'Comm1': (context) => MyComm1(),
+      'market': (context) => Mymarket(),
     },
   ));
 }
