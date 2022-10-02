@@ -1,6 +1,6 @@
 # the_techwinds
 
-A new Flutter project.
+Our take on problem statement.
 
 ## Getting Started
 
