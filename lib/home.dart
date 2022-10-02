@@ -220,7 +220,7 @@ class _Homescreenstate extends State<Homescreen> {
                               ),
                               InkWell(
                                 child: Text(
-                                  "Rentals",
+                                  "Marketplace",
                                   style: cardtextStyle,
                                 ),
                                 onTap: () {

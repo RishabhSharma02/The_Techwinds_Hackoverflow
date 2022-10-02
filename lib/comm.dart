@@ -87,18 +87,20 @@ class _MyCommstate extends State<MyComm> {
               child: Row(
                 children: <Widget>[
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, "market");
+                    },
                     child: Container(
                       height: 30,
                       width: 30,
                       decoration: BoxDecoration(
                         color: Colors.lightBlue,
-                        borderRadius: BorderRadius.circular(30),
+                        borderRadius: BorderRadius.circular(60),
                       ),
                       child: Icon(
-                        Icons.add,
+                        Icons.shopping_cart,
                         color: Colors.white,
-                        size: 20,
+                        size: 30,
                       ),
                     ),
                   ),

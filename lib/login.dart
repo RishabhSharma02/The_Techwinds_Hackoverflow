@@ -3,7 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
-import 'package:language_picker/language_picker.dart';
 
 class MyLogin extends StatefulWidget {
   const MyLogin({Key? key}) : super(key: key);
@@ -75,7 +74,7 @@ class _MyLoginState extends State<MyLogin> {
                           decoration: InputDecoration(
                               fillColor: Colors.grey.shade100,
                               filled: true,
-                              hintText: "Select language",
+                              hintText: "Enter your name",
                               hoverColor: Colors.white,
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10),
